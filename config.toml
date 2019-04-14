@@ -1,0 +1,13 @@
+baseURL = "http://schickmalzwo.de/"
+languageCode = "en-us"
+title = "schickmalzwo"
+theme = "landing-page-hugo"
+
+[[params.social]]
+	title = "soundcloud"
+	icon = "soundcloud"
+	url = "https://soundcloud.com/schickmalzwo"
+[[params.social]]
+	title = "facebook"
+	icon = "facebook"
+	url = "https://facebook.com/schickmalzwo"
