@@ -1,7 +1,7 @@
 baseURL = "http://schickmalzwo.de/"
 languageCode = "en-us"
 title = "schickmalzwo"
-theme = "landing-page-hugo"
+theme = "landing-page"
 
 [[params.social]]
 	title = "soundcloud"
