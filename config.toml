@@ -4,6 +4,10 @@ title = "schickmalzwo"
 theme = "landing-page"
 
 [[params.social]]
+	title = "email"
+	icon = "envelope-o"
+	url = "mailto:verschickt@schickmalzwo.de"
+[[params.social]]
 	title = "soundcloud"
 	icon = "soundcloud"
 	url = "https://soundcloud.com/schickmalzwo"
