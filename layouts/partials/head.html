@@ -8,10 +8,16 @@
     <meta name="description" content="Live music & visuals for your dance floor 💃.">
     <meta name="author" content="Tim Pietrusky">
     <base href="{{ .Site.BaseURL }}">
+
+    <meta property="og:title" content="schickmalzwo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/schickmalzwo_tag_der_innenarchitektur_mainz_2018_pixelized.webp" />
+
     <title>{{ .Title }}</title>
 
-    <!-- Custom CSS  -->
-    <link href="/css/landing-page.css" rel="stylesheet">
+    {{ $style := resources.Get "css/landing-page.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <!-- Local CSS -->
     {{ range .Site.Params.custom_css }}
