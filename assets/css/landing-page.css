@@ -31,17 +31,15 @@ a {
     background: #462c59 url(../img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.webp) no-repeat center center;
     background-size: cover;
     height: 100vh;
-}
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-message > h1 {
     margin: 0;
-    font-size: 9em;
+    font-size: 8em;
     text-transform: lowercase;
 }
 
@@ -56,10 +54,6 @@ a {
 }
 
 @media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
     .intro-message > h1 {
         font-size: 3em;
     }
