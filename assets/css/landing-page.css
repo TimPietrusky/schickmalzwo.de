@@ -37,10 +37,22 @@ a {
     align-items: center;
 }
 
+.intro-message > .media {
+    height: 40vh;
+    width: 40vw;
+    border: 0;
+}
+
 .intro-message > h1 {
-    margin: 0;
+    margin: 3em 0 0 0;
     font-size: 8em;
     text-transform: lowercase;
+}
+
+.intro-message > h2 {
+    margin: 0 0 0 0;
+    font-size: 3em;
+    text-transform: uppercase;
 }
 
 .intro-divider {
