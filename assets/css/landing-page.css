@@ -90,6 +90,10 @@ a {
     background: #181717;
 }
 
+.instagram {
+    background: #E4405F;
+}
+
 @media(max-width:767px) {
     .intro-message > h1 {
         font-size: 3em;

@@ -16,6 +16,10 @@ theme = "landing-page"
 	icon = "twitter"
 	url = "https://www.twitter.com/schickmalzwo"
 [[params.social]]
+	title = "instagram"
+	icon = "instagram"
+	url = "https://www.instagram.com/schickmalzwo"
+[[params.social]]
 	title = "facebook"
 	icon = "facebook"
 	url = "https://facebook.com/schickmalzwo"
