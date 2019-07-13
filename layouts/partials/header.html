@@ -6,11 +6,11 @@
 			<h1 data-text="{{ .Site.Title }}">{{ .Site.Title }}</h1>
 
 			<h3>
-					DJ + VJ = 🔊🎆 <br/>
-					Passion brings us together.
-				</h3>
+				DJ + VJ = 🔊🎆 <br />
+				Passion brings us together.
+			</h3>
 
-				<br />
+			<br />
 			<br />
 
 			<iframe class="media" src="//www.youtube.com/embed/RsqeSfyhzdw?autoplay=1&rel=0" allowfullscreen title="schickmalzwo - dnb me up"></iframe>
@@ -24,10 +24,17 @@
 
 			{{ if isset .Site.Params "social" }}
 			<ul class="list-inline intro-social-buttons">
-					{{ partial "social.html" . }}
+				{{ partial "social.html" . }}
 			</ul>
 			{{ end }}
+
 		</div>
+
+		<picture class="intro-background">
+			<source srcset="img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.webp" type="image/webp">
+			<source srcset="img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.jpg" type="image/jpeg">
+			<img src="img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.jpg" alt="Alt Text!">
+		</picture>
 
 	</div>
 	<!-- /.intro-header -->

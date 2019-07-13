@@ -20,22 +20,17 @@ a {
   text-decoration: none;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-
 .intro-header {
+    position: relative;
     text-align: center;
     color: #f8f8f8;
-    background: #462c59 url(../img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.webp) no-repeat center center;
-    background-size: cover;
     height: 100%;
     min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .intro-message > .media {
@@ -56,6 +51,17 @@ a {
     text-transform: uppercase;
 }
 
+.intro-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: #462c59;
+
+}
+
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
@@ -72,9 +78,16 @@ a {
         font-size: 3em;
     }
 
+    .intro-message > h2 {
+        font-size: 1em;
+    }
+
+    .intro-message > h3 {
+        font-size: 1em;
+    }
+
     ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
+        margin: 0 .5em .75em 0;
         padding: 0;
     }
 
@@ -152,7 +165,7 @@ a {
     }
 
     ul.contact-social-buttons > li {
-        display: block;
+        float: left;
         margin-bottom: 20px;
         padding: 0;
     }
@@ -160,7 +173,15 @@ a {
     ul.contact-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+
+    .intro-message > .media {
+        height: 40vh;
+        width: 80vw;
+        border: 0;
+    }
 }
+
+
 
 footer {
     padding: 50px 0;
