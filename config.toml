@@ -23,3 +23,7 @@ theme = "landing-page"
 	title = "email"
 	icon = "email"
 	url = "mailto:verschickt@schickmalzwo.de"
+[[params.social]]
+	title = "github"
+	icon = "github"
+	url = "https://github.com/TimPietrusky/schickmalzwo.de"

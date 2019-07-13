@@ -86,6 +86,10 @@ a {
     background: #fff;
 }
 
+.github {
+    background: #181717;
+}
+
 @media(max-width:767px) {
     .intro-message > h1 {
         font-size: 3em;
