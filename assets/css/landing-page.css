@@ -66,6 +66,26 @@ a {
     height: 1.5em;
 }
 
+.soundcloud {
+    background: #FF3300;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.twitter {
+    background: #1DA1F2;
+}
+
+.facebook {
+    background: #4172B8;
+}
+
+.email {
+    background: #fff;
+}
+
 @media(max-width:767px) {
     .intro-message > h1 {
         font-size: 3em;

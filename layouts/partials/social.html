@@ -1,6 +1,6 @@
 {{ range .Site.Params.social }}
 <li>
-	<a href="{{ .url }}" class="btn btn-default btn-lg">
+	<a href="{{ .url }}" class="btn {{ .icon }}">
 		<img src="social/{{ .icon }}.svg" alt="{{ .title }}" class="icon" />
 	</a>
 </li>
