@@ -3,35 +3,46 @@
 	<div class="intro-header">
 
 		<div class="intro-message">
-			<h1 data-text="{{ .Site.Title }}">{{ .Site.Title }}</h1>
 
-			<h3>
-				DJ + VJ = 🔊🎆 <br />
-				Passion brings us together.
-			</h3>
+      <div class="column">
 
-			<br />
+      </div>
 
-			<iframe class="media" src="//www.youtube.com/embed/RsqeSfyhzdw?autoplay=1&rel=0" allowfullscreen title="schickmalzwo - dnb me up"></iframe>
 
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+      <div class="column center">
+        <div>
+          <h1><b>schick</b>mal<b>zwo</b></h1>
+        
+          <h2>
+            passion brings us together
+          </h2>
+        </div>
+      </div>
 
-			<p>
-				We're always looking for new locations and great people, so feel free to connect with us!
-			</p>
 
-			{{ if isset .Site.Params "social" }}
-			<ul class="list-inline intro-social-buttons">
-				{{ partial "social.html" . }}
-			</ul>
-			{{ end }}
+
+      <div class="column center">
+        <a href="https://www.youtube.com/watch?v=RsqeSfyhzdw&rel=0" class="play" target="_blank">
+          <img src="social/video.svg" alt="schickmalzwo - DNB ME UP 💃" class="play-icon" />
+        </a>
+      </div>
+
+
+
+      <div class="column bottom">
+        <p>
+          always looking for great people<br />
+          and new locations.<br />
+          connect with us
+        </p>
+
+        {{ if isset .Site.Params "social" }}
+        <ul class="list-inline intro-social-buttons">
+          {{ partial "social.html" . }}
+        </ul>
+        {{ end }}
+      </div>
 
 		</div>
 	</div>
-	<!-- /.intro-header -->
 </section>

@@ -1,183 +1,184 @@
 body,
 html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 body,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
 }
 
+b {
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
 .intro-header {
-    text-align: center;
-    color: #f8f8f8;
-    background: #462c59 url(../img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.jpg) no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  color: #f8f8f8;
+  background: #462c59 url(../img/schickmalzwo_tag_der_innenarchitektur_mainz_2018.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.intro-message > .media {
-    height: 40vh;
-    width: 40vw;
-    border: 0;
+.intro-message {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
 }
 
-.intro-message > h1 {
-    margin: 0em 0 0 0;
-    font-size: 8em;
-    text-transform: lowercase;
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
-.intro-message > h2 {
-    margin: 0 0 0 0;
-    font-size: 3em;
-    text-transform: uppercase;
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
 
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+.media {
+  height: 40vh;
+  width: 40vw;
+  border: 0;
 }
 
-.intro-message > h3 {
-    font-size: 2em;
-    margin: 0;
+.play {
+  background: #fff;
+  padding: .35em;
+  border-radius: 50%;
+  display: flex;
+  transition: transform .25s;
+}
+
+.play:hover {
+  transform: scale(1.25);
+}
+
+.play-icon {
+  width: 6em;
+  height: 6em;
+}
+
+ h1 {
+  margin: 0 0 .25em 0;
+  display: inline-block;
+  padding: .15em;
+  font-size: 2.5em;
+  text-transform: lowercase;
+
+  background: #000;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin: 0;
 }
 
 .intro-social-buttons .icon {
-    width: 1.5em;
-    height: 1.5em;
-}
-
-.soundcloud {
-    background: #FF3300;
-}
-
-.youtube {
-    background: #FF0000;
-}
-
-.twitter {
-    background: #1DA1F2;
-}
-
-.facebook {
-    background: #4172B8;
-}
-
-.email {
-    background: #fff;
-}
-
-.github {
-    background: #181717;
-}
-
-.instagram {
-    background: #E4405F;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 @media(max-width:767px) {
-    .intro-message > h1 {
-        font-size: 3em;
-    }
+  .intro-message {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 
-    .intro-message > h2 {
-        font-size: 1em;
-    }
+  .play-icon {
+    width: 5em;
+    height: 5em;
+  }
 
-    .intro-message > h3 {
-        font-size: 1em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 
-    ul.intro-social-buttons > li {
-        margin: 0 .5em .75em 0;
-        padding: 0;
-    }
+  h2 {
+    font-size: 1em;
+  }
 
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
 
-    .intro-divider {
-        width: 100%;
-    }
-
-    .intro-message > .media {
-        height: 40vh;
-        width: 100vw;
-        border: 0;
-    }
+  ul.intro-social-buttons>li {
+    margin: 0 .5em .75em 0;
+    padding: 0;
+  }
 }
 
-@media(max-width:1199px) {
-}
+@media(max-width:1199px) {}
 
 /* Borrow from Bootstrap */
 .list-inline {
   padding-left: 0;
-  margin-left: -5px;
   list-style: none
 }
+
 .list-inline>li {
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px
+  margin: 0 .25em;
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
   padding: .25em;
   margin-bottom: 0;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px
+  border: none;
 }
 
-.btn:focus,.btn:active:focus,.btn.active:focus {
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px
 }
 
-.btn:hover,.btn:focus {
+.btn:hover,
+.btn:focus {
   color: #333;
   text-decoration: none
 }
 
-.btn:active,.btn.active {
+.btn:active,
+.btn.active {
   background-image: none;
   outline: 0;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-  box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
 }
 
-.btn.disabled,.btn[disabled],fieldset[disabled] .btn {
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
   pointer-events: none;
   cursor: not-allowed;
   filter: alpha(opacity=65);
@@ -187,22 +188,40 @@ a {
 }
 
 .btn-default {
-  color: #333;
   background-color: #fff;
-  border-color: #ccc
 }
 
-.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default {
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open>.dropdown-toggle.btn-default {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad
 }
 
-.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default {
+.btn-default:active,
+.btn-default.active,
+.open>.dropdown-toggle.btn-default {
   background-image: none
 }
 
-.btn-default.disabled,.btn-default[disabled],fieldset[disabled] .btn-default,.btn-default.disabled:hover,.btn-default[disabled]:hover,fieldset[disabled] .btn-default:hover,.btn-default.disabled:focus,.btn-default[disabled]:focus,fieldset[disabled] .btn-default:focus,.btn-default.disabled:active,.btn-default[disabled]:active,fieldset[disabled] .btn-default:active,.btn-default.disabled.active,.btn-default[disabled].active,fieldset[disabled] .btn-default.active {
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
   background-color: #fff;
   border-color: #ccc
 }
