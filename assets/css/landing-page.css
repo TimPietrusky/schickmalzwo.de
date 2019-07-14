@@ -79,7 +79,7 @@ h2 {
 
 .play {
   background: #fff;
-  padding: .35em;
+  padding: 0;
   border-radius: 50%;
   display: flex;
   transition: transform .25s;
