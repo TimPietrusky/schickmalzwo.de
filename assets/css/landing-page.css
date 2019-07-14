@@ -38,7 +38,7 @@ p {
   align-items: center;
 }
 
-.intro-message {
+.grid {
   display: grid;
   height: 100vh;
   grid-template-rows: 2fr 1fr 1fr 1fr;
@@ -60,10 +60,21 @@ p {
   justify-content: flex-end;
 }
 
-.media {
-  height: 40vh;
-  width: 40vw;
-  border: 0;
+
+h1 {
+  margin: 0 0 .35em 0;
+  display: inline-block;
+  padding: .15em .35em;
+  font-size: 2.5em;
+  text-transform: lowercase;
+
+  background: #000;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.375em;
+  margin: 0;
 }
 
 .play {
@@ -79,24 +90,8 @@ p {
 }
 
 .play-icon {
-  width: 6em;
-  height: 6em;
-}
-
- h1 {
-  margin: 0 0 .25em 0;
-  display: inline-block;
-  padding: .15em;
-  font-size: 2.5em;
-  text-transform: lowercase;
-
-  background: #000;
-  color: #fff;
-}
-
-h2 {
-  font-size: 1.25em;
-  margin: 0;
+  width: 3.5em;
+  height: 3.5em;
 }
 
 .intro-social-buttons .icon {
@@ -105,13 +100,13 @@ h2 {
 }
 
 @media(max-width:767px) {
-  .intro-message {
+  .grid {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   .play-icon {
-    width: 5em;
-    height: 5em;
+    width: 3.5em;
+    height: 3.5em;
   }
 
   h1 {
@@ -119,7 +114,7 @@ h2 {
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.075em;
   }
 
 
