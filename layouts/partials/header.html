@@ -23,7 +23,9 @@
 
       <div class="column center">
         <a href="https://www.youtube.com/watch?v=RsqeSfyhzdw&rel=0" class="play" target="_blank">
-          <img src="social/video.svg" alt="schickmalzwo - DNB ME UP 💃" class="play-icon" />
+          <span class="play-icon">
+            {{ printf "static/social/%s.svg" "video" | readFile | safeHTML }}
+          </span>
         </a>
       </div>
 
