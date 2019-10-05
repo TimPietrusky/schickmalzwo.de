@@ -1,3 +1,7 @@
+::root {
+  --color: #2d2f2c;
+}
+
 body,
 html {
   width: 100%;
@@ -73,6 +77,14 @@ h1 {
   color: #fff;
 }
 
+.logo {
+  width: 18em;
+  margin: 0 0 1em 0;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
 h2 {
   font-size: 1.375em;
   margin: 0;
@@ -84,6 +96,7 @@ h2 {
   border-radius: 50%;
   display: flex;
   transition: transform .25s;
+  border-color: var(--color);
 }
 
 .play:hover {
