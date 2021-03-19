@@ -34,7 +34,7 @@ p {
 .intro-header {
   text-align: center;
   color: #f8f8f8;
-  background: #000 url(../img/schickmalzwo_hybris_peng_mainz_2020.jpg) no-repeat center center;
+  background: #000 url(../img/schickmalzwo_mc_proper_hybris_peng_mainz_2020.jpg) no-repeat center center;
   background-size: cover;
   height: 100%;
   min-height: 100vh;
@@ -78,7 +78,7 @@ h1 {
 }
 
 .logo {
-  width: 40em;
+  width: 33em;
   margin: 0;
   font-size: 1rem;
   text-align: center;
