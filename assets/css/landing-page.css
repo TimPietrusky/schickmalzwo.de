@@ -114,6 +114,14 @@ h2 {
 }
 
 @media(max-width:767px) {
+  .intro-header {
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 30em;
+  }
+
   .grid {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
@@ -130,7 +138,6 @@ h2 {
   h2 {
     font-size: 1.075em;
   }
-
 
   ul.intro-social-buttons>li {
     margin: 0 .5em .75em 0;
