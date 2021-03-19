@@ -12,32 +12,17 @@
       <div class="column center">
         <div>
           <div class="logo">
-            {{ printf "static/img/schickmalzwo-piktogramme-bunt.svg" | readFile | safeHTML }}
+            {{ printf "static/img/schickmalzwo-piktogramme-white_transparent.svg" | readFile | safeHTML }}
           </div>
-        
-          <h2>
-            passion brings us together
-          </h2>
+
         </div>
-      </div>
-
-
-
-      <div class="column center">
-        <a href="https://www.youtube.com/watch?v=RsqeSfyhzdw&rel=0" class="play" target="_blank" aria-label="Play latest video on YouTube">
-          <span class="play-icon">
-            {{ printf "static/social/%s.svg" "video" | readFile | safeHTML }}
-          </span>
-        </a>
       </div>
 
 
 
       <div class="column bottom">
         <p>
-          always looking for great people<br />
-          and new locations.<br />
-          connect with us
+          passion brings us together
         </p>
 
         {{ if isset .Site.Params "social" }}

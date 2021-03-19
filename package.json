@@ -1,0 +1,31 @@
+{
+  "name": "schickmalzwo",
+  "version": "1.0.0",
+  "description": "The website of schickmalzwo",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "concurrently": "^5.2.0",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm:watch:hugo\"",
+    "watch:hugo": "hugo server -p 1314 -D --renderToDisk -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimPietrusky/schickmalzwo.de.git"
+  },
+  "keywords": [
+    "schickmalzwo"
+  ],
+  "author": "schickmalzwo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimPietrusky/schickmalzwo.de/issues"
+  },
+  "homepage": "https://github.com/TimPietrusky/schickmalzwo.de#readme"
+}
